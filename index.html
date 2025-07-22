@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Expense Tracker</title>
+  </head>
+  <body>
+    <div class="first">
+      <div class="heading"><h1>My Expense Tracker</h1></div>
+      <div class="mode">
+        <i class="night fa-solid fa-moon"></i
+        ><i class="sun fa-solid fa-sun"></i>
+      </div>
+    </div>
+
+    <div class="calculation">
+      <div class="budget">
+        <h2>BUDGET</h2>
+
+        <input class="check" type="text" placeholder="Enter Your Budget..." />
+
+        <button class="confirmBudget">Set Budget</button>
+        <button class="removeBudget">Remove Budget</button>
+        <button class="clearAll">Clear All</button>
+      </div>
+      <div class="expense">
+        <h2>EXPENSES</h2>
+        <input
+          class="projectName"
+          type="text"
+          placeholder="Enter Title Of Project..."
+        />
+        <input
+          class="projectCost"
+          type="text"
+          placeholder="Enter Cost Of Project..."
+        />
+
+        <input type="date" class="date" />
+        <button class="confirmExpenses">Check Amount</button>
+      </div>
+    </div>
+
+    <div class="showing">
+      <div class="totalBudget">
+        <h3>Budget</h3>
+        <h5>-</h5>
+      </div>
+      <div class="totalExpenses">
+        <h3>Expenses</h3>
+        <h5>-</h5>
+      </div>
+      <div class="totalBalance">
+        <h3>Balance</h3>
+        <h5>-</h5>
+      </div>
+    </div>
+
+    <div class="list">
+      <h2>Expense List</h2>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

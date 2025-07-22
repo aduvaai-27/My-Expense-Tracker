@@ -1,0 +1,377 @@
+@import url("https://fonts.googleapis.com/css2?family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Pirata+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Aclonica&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=MuseoModerno:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Offside&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+
+  min-height: 100vh;
+  background-color: rgb(210, 201, 201);
+  font-family: "Aclonica", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.first {
+  display: flex;
+  flex-direction: row;
+
+  align-items: center;
+}
+.heading {
+  margin: 1.5rem;
+  font-family: "Luckiest Guy", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2rem;
+}
+
+.night {
+  position: fixed;
+  top: 3rem;
+  right: 3rem;
+  margin-left: 5rem;
+  padding: 0.5rem;
+  width: 1.5rem;
+  border-radius: 50%;
+  cursor: pointer;
+
+  background-color: black;
+  color: white;
+  font-size: 1.4rem;
+}
+.sun {
+  position: fixed;
+  top: 3rem;
+  right: 3rem;
+  margin-left: 5rem;
+  padding: 0.5rem;
+  width: 1.5rem;
+  border-radius: 50%;
+  cursor: pointer;
+
+  background-color: black;
+  color: white;
+  font-size: 1.4rem;
+}
+
+.calculation {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 60%;
+}
+
+.budget {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 40%;
+  color: black;
+
+  height: 350px;
+  background-color: white;
+  padding: 15px;
+  gap: 15px;
+  margin: 25px;
+  border-radius: 20px;
+}
+
+input {
+  height: 3rem;
+  padding: 10px;
+  border-radius: 20px;
+  font-size: 1rem;
+  font-family: "Offside", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+button {
+  max-width: 40%;
+  text-wrap: wrap;
+  height: 2rem;
+  border-radius: 10px;
+
+  cursor: pointer;
+  background-color: rgb(211, 161, 52);
+  color: white;
+  font-weight: 800;
+  font-family: "MuseoModerno", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+}
+
+button:hover {
+  transform: scale(1.1);
+  border: 2px solid black;
+  background-color: rgb(211, 161, 52);
+}
+button:active {
+  background-color: rgb(232, 182, 73);
+}
+
+.clearAll {
+  background-color: rgb(143, 12, 12);
+}
+
+.clearAll:hover {
+  background-color: rgb(143, 12, 12);
+  transform: scale(1.1);
+  border: 2px solid black;
+}
+
+.clearAll:active {
+  background-color: rgb(191, 25, 25);
+}
+
+.expense {
+  color: black;
+  display: flex;
+  width: 40%;
+  flex-direction: column;
+  justify-content: center;
+
+  height: 350px;
+  background-color: white;
+  padding: 15px;
+  gap: 15px;
+  margin: 25px;
+  border-radius: 20px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  gap: 0.7rem;
+}
+
+.showing {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  align-items: center;
+  width: 60%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 45px;
+  padding-right: 45px;
+  height: 6.5rem;
+
+  background-color: rgb(211, 161, 52);
+  border-radius: 20px;
+  color: white;
+}
+
+.red {
+  background-color: red;
+}
+.totalBalance {
+  font-size: 1.4rem;
+  font-family: "Permanent Marker", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.totalBudget {
+  font-size: 1.4rem;
+  font-family: "Permanent Marker", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+.totalExpenses {
+  font-size: 1.4rem;
+  font-family: "Permanent Marker", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.list {
+  margin: 2rem;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  width: 54%;
+  border-radius: 30px;
+}
+
+.list h2 {
+  font-family: "Permanent Marker", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.project {
+  display: flex;
+  padding: 1rem;
+  gap: 30px;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 100px;
+}
+.name {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  white-space: normal;
+  font-size: 2.5rem;
+  font-family: "Winky Rough", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+  width: 30%;
+}
+
+.sun {
+  background-color: white;
+  color: rgb(211, 161, 52);
+}
+
+.date {
+  cursor: pointer;
+}
+
+.price {
+  width: 30%;
+}
+.list i {
+  font-size: 1.4rem;
+  color: rgb(211, 161, 52);
+  cursor: pointer;
+}
+
+.change {
+  display: flex;
+}
+
+.edit {
+  padding: 10px;
+  margin-right: 20px;
+}
+
+.delete {
+  padding: 10px;
+}
+
+.dark {
+  background-color: black;
+
+  color: rgb(211, 161, 52);
+}
+.on {
+  background-color: white;
+  color: black;
+}
+
+.hide {
+  display: none;
+}
+
+.pulse {
+  animation: scale 2s infinite ease-in-out;
+}
+@keyframes scale {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@media (max-width: 920px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+  }
+
+  .heading {
+    font-family: "Luckiest Guy", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.1rem;
+    text-align: center;
+  }
+  .mode {
+    font-size: 1.2rem;
+    top: 0.8rem;
+    right: 0.8rem;
+  }
+
+  .calculation {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .budget {
+    width: 80%;
+  }
+
+  .expense {
+    width: 80%;
+  }
+
+  input {
+    font-size: 0.8rem;
+    height: 20px;
+  }
+
+  button {
+    font-size: 0.7rem;
+    min-width: 80%;
+  }
+
+  .name {
+    width: 50%;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
+  }
+  .price {
+    width: 50%;
+    white-space: normal;
+    word-wrap: break-word;
+  }
+
+  .date {
+    width: 80%;
+    white-space: normal;
+  }
+  .list {
+    width: 90%;
+  }
+
+  .change {
+    margin-left: 2px;
+  }
+
+  .showing h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
+  }
+
+  .showing h5 {
+    font-size: 1rem;
+  }
+}
